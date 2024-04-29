@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tutorial de Configuração do Ambiente PHP Local</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+        }
+
+        nav {
+            background-color: #2310cf4f;
+            color: #070808;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #4433b1;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 15px;
+            background-color: #0e7eaa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            color: #800a0a;
+            background: linear-gradient(45deg, purple, orange, black);
+            background-size: 400% 100%;
+            animation: degrade 10s linear infinite alternate;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            outline: none;
+
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        button {
+            color: #e23d0a;
+            color: #dd0707;
+            background-color: #02f7606c;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration-style: solid;
+            display: inline-block;
+            font-size: 13px;
+            margin: 9px 7px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #78a5bd;
+            color: rgb(6, 236, 225);
+        }
+
+
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        @keyframes degrade {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            background: linear-gradient(45deg, purple, orange, black);
+            background-size: 400% 100%;
+            animation: degrade 10s linear infinite alternate;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            outline: none;
+
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tutorial de Configuração do Ambiente PHP Local</h1>
+    <nav>
+        <ul>
+            <li><a href="https://www.php.net/manual/pt_BR/install.windows.php"><button>
+                        <h2>Configurando com PHP do site oficial</h2>
+                    </button></a></li>
+            <li><a href="https://www.apachefriends.org/pt_br/index.html"><button>
+                        <h2>Configurando com XAMPP</h2>
+                    </button></a></li>
+        </ul>
+    </nav>
+
+    <section id="intro">
+        <h2>Introdução</h2>
+        <p>PHP é uma linguagem de script de código aberto muito popular, que é especialmente adequada para
+            desenvolvimento web e pode ser incorporada em HTML. É usado por milhões de sites em todo o mundo devido à
+            sua flexibilidade e simplicidade.</p>
+    </section>
+
+    <section id="php-site">
+        <h2>Configurando com PHP do site oficial</h2>
+        <ol>
+            <li>Baixe a versão mais recente do PHP compatível com seu sistema operacional no site oficial do PHP.</li>
+            <br><br>
+            <img src="MicrosoftTeams-image.png" alt=""><br><br>
+            <li>Após o download, extraia o arquivo para um diretório de sua escolha.</li><br>
+            <img src="MicrosoftTeams-image (1).png" alt=""><br><br><br>
+            <li>Abra o prompt de comando e navegue até o diretório onde o PHP foi extraído.</li><br>
+            <img src="Capturar3.PNG" alt=""><br><br>
+            <li>Inicie o servidor embutido com o comando: php -S localhost:80 -t "pastadetrabalho"</li><br>
+            <img src="servido.JPG" alt=""><br><br>
+            <li>Crie um arquivo PHP chamado exemplo.php e coloque algum código nele.</li><br>
+            <img src="exemplo.png" alt=""><br>
+            <li>Salve o arquivo na pasta de trabalho definida anteriormente.</li><br>
+            <img src="salvamento.png" alt=""><br>
+            <li>Abra o navegador e digite localhost/exemplo.php na barra de endereços para ver o resultado.</li><img
+                src="ola.JPG" alt=""><br>
+        </ol>
+    </section>
+
+    <section id="xampp">
+        <h2>Configurando com XAMPP</h2>
+        <ol>
+            <li>Baixe e instale o XAMPP.</li><br>
+            <img src="MicrosoftTeams-image (2).png" alt=""><br>
+            <li>Após a instalação, abra o painel de controle do XAMPP e inicie os módulos Apache e MySQL.</li><br>
+            <img src="MicrosoftTeams-image (3).png" alt=""><br><br>
+            <li>Coloque suas pastas de projetos e códigos PHP dentro da pasta htdocs, que está no diretório onde o
+                XAMPPestá instalado.</li><br>
+            <img src="Capturar41.PNG" alt=""><br>
+            <li>Crie um arquivo PHP chamado index.php dentro da pasta htdocs e adicione algum código a ele.</li><br>
+            <img src="Captura.PNG" alt=""><br>
+            <li>Abra o navegador e digite localhost/pasta/exemplo.php na barra de endereços para ver o resultado.</li>
+            <br>
+            <br>
+            <img src="apturar.PNG" alt=""><br><img src="exemplo1.PNG" alt="">
+        </ol>
+    </section>
+</body>
+
+</html>
